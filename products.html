@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Products | eBuy</title>
+</head>
+<body>
+    <header class="header-main">
+        <div class="header-title"> eBuy </div>
+        <input class="header-search" placeholder="search products" type="text" />
+        <div class="header-menu" >
+            <button class="header-btn">LOGIN</button>
+            <div class="wishlist-wrapper"><i class="fa fa-heart"></i><span class="header-item-count">5</span></div>
+            <div class="cart-wrapper"><i class="fas fa-shopping-cart"></i><span class="header-item-count">5</span></div>
+        </div>
+    </header>
+        <main class="main-container-product">
+            <div class="mcp-filter">
+                <div class="mcp-filter-row">
+                    <div class="mcp-filter-title">Filters</div>
+                    <div class="mcp-filter-clear">Clear</div>
+                </div>
+                <div class="mcp-filter-col">
+                    <div class="mcp-filter-title">Price</div>
+                    <div class="mcp-filter-slider">
+                        <div class="mcp-filter-slider-price"><span class="slide-price">100</span><span class="slide-price">500</span><span class="slide-price">1000</span></div>
+                      
+                        <input class="mcp-filter-sliding" type="range" id="volume" name="volume"
+                               min="0" max="11" />
+                   
+                      </div>
+                </div>
+                <div class="mcp-filter-col">
+                    <div class="mcp-filter-title">Category</div>
+                    <div class="mcp-filter-categories">
+                    <div class="mcp-filter-categories-item"><input type="checkbox" id="clothing" name="clothing" value="men-clothing"><label for="men-clothing"> Men Clothing</label></div>
+                    <div class="mcp-filter-categories-item">  <input type="checkbox" id="clothing" name="clothing" value="women-clothing"><label for="women-clothing"> Women Clothing</label></div>
+                    <div class="mcp-filter-categories-item">  <input type="checkbox" id="clothing" name="clothing" value="boy-clothing"><label for="boy-clothing"> Boys Clothing</label></div>
+                    <div class="mcp-filter-categories-item">  <input type="checkbox" id="clothing" name="clothing" value="girl-clothing"><label for="girl-clothing"> Girls Clothing</label></div>
+                </div>
+                </div>
+                <div class="mcp-filter-col">
+                    <div class="mcp-filter-title">Rating</div>
+                    <div class="mcp-filter-ratings">
+                     <div class="mcp-filter-ratings-item"><input type="radio" id="fourabove" name="rating" value="fourabove"><label for="fourabove">  4 Stars & above</label></div>
+                    <div class="mcp-filter-ratings-item">  <input type="radio" id="threeabove" name="rating" value="threeabove"><label for="threeabove">  3 Stars & above</label></div>
+                    <div class="mcp-filter-ratings-item">  <input type="radio" id="twoabove" name="rating" value="twoabove"><label for="twoabove">  2 Stars & above</label></div>
+                    <div class="mcp-filter-ratings-item">  <input type="radio" id="" name="rating" value="oneabove"><label for="oneabove"> 1 Stars & above</label></div>
+         
+                    </div>
+                </div>
+                <div class="mcp-filter-col">
+                    <div class="mcp-filter-title">Sort by</div>
+                    <div class="mcp-filter-sort">
+                    <div class="mcp-filter-sort-item"><input type="radio" id="hightolow" name="sortprice" value="sortprice"><label for="sortprice"> Price High to Low</label></div>
+                    <div class="mcp-filter-sort-item">  <input type="radio" id="lowtohigh" name="sortprice" value="sortprice"><label for="sortprice"> Price Low to High</label></div>
+                    </div>
+                </div>
+       
+            </div>   
+            <div class="mcp-display">
+                <div class="mcp-display-title">Showing All Products (showing 20 products)</div>
+                <div class="mcp-display-products">
+                    <div class="mcp-display-product-item" id="product1">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Men premium jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id1">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart1">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item" id="product2">
+                        <img class="mcp-display-product-item-img" src="./assets/sweater.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Men premium Sweater</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id2">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart2">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item" id="product3">
+                        <img class="mcp-display-product-item-img" src="./assets/tshirt.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Men premium Tshirt</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id3">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart3">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item" id="product4">
+                        <img class="mcp-display-product-item-img" src="./assets/ladiesjacket.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id4">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart4">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item" id="product5">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket2.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id5">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart5">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item" id="product6">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket3.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id6">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart6">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket4.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id7">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart7">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket5.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id8">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart8">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket6.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id9">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart9">Go to Cart</button>
+                    </div>
+                    <div class="mcp-display-product-item">
+                        <img class="mcp-display-product-item-img" src="./assets/jacket7.jpg"/>
+                        <div class="mcp-wishlist-wrapper"><i class="fa fa-heart"></i></div>
+                        <div class="mcp-product-item-desc">Women premium Jacket</div>
+                        <div class="mcp-product-item-price">RS 5000</div>
+                        <button class="mcp-product-addcart" id="mcp-product-id10">Add to Cart</button>
+                        <button class="mcp-product-addcart gocart" id="mcp-go-cart10">Go to Cart</button>
+                    </div>
+                </div>
+
+        </main>
+        <!--<footer class="footer-container">
+            <div class="social-media-handle">
+                <a href="https://github.com/jyothishp994"><i class="fab fa-github" style='font-size:30px;color:white'></i></a>
+                <a href="https://www.linkedin.com/in/jyothish-pavithran-490b4a107/"><i class="fab fa-linkedin" style='font-size:30px;color:white'></i></a>
+                <a href="https://twitter.com/jyothish94"><i class="fab fa-twitter" style='font-size:30px;color:white'></i></a>
+            </div>
+           <div class="footer-tagline">Made with &#9829 by Jyothish</div> 
+        </footer>-->
+        <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
